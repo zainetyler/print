@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Photo printing Cagsalaosao</title>
+    <style>
+        /* 2. Ensure the html and body take up 100% of the visible area */
+        html, body { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%;
+            overflow: hidden; /* Prevents the outer page from scrolling */
+            background-color: #030712; /* Matches your HUD theme background */
+        }
+
+        /* 3. Mobile-friendly iframe container */
+        .iframe-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS Safari */
+            overflow-y: auto;
+        }
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+            /* 4. Fix for some mobile browsers that don't respect 100% height */
+            min-height: 100vh; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="iframe-container">
+        <iframe 
+            src="https://script.google.com/macros/s/AKfycbx2oQMzf4zhp7hqJHv7a3H-cVAT4tFbCKi2TMnA1us7hIhSivrsY73h0gUH_Kh_2tkNzw/exec"
+            allow="geolocation; microphone; camera">
+        </iframe>
+    </div>
+
+</body>
+</html>
